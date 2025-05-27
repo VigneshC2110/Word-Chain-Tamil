@@ -140,7 +140,6 @@ function submitWord() {
   document.getElementById("previous-word").innerText = newWord;
   document.getElementById("chain-list").innerHTML += `<li>${newWord}</li>`;
 
-  // Score is total length of all used words combined
   score = usedWords.reduce((sum, w) => sum + w.length, 0);
   document.getElementById("score").innerText = `Score: ${score}`;
 }
